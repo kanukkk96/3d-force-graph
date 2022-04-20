@@ -13,7 +13,8 @@
 
     const Graph = ForceGraph3D()
       (elem)
-        .jsonUrl('../datasets/miserables.json')
+        //.jsonUrl('../datasets/miserables.json')
+        .jsonUrl('https://raw.githubusercontent.com/DealPete/forceDirected/master/countries.json')
         .nodeLabel('id')
         .nodeAutoColorBy('group')
         .onNodeClick(node => {
